@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+hr {
+    border-color: midnightblue;
+}
+header {
+    background-color: #002359;
+    color: #fff;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+header .logo img {
+    max-width: 80px;
+    margin-left: 40px;
+    border-radius: 50%;
+    float: left;
+    clear: both;
+}
+
+.navbar-blue a {
+    color: #FFF;
+    margin-right: 190px;
+}
+.navbar-blue a:hover {
+    color: blue;
+}
+
+.navbar-blue .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    margin-left: -44px;
+}
+
+.navbar-blue .dropdown-item {
+    margin: 0;
+    padding: 10px 30px;
+    color: black;
+}
+
+.navbar-blue .dropdown-menu {
+    margin: 0;
+}
+/*nav ul {*/
+/*    !*list-style: none;*!*/
+/*    !*display: flex;*!*/
+/*    margin-right: 1000px;*/
+/*}*/
+
+/*nav ul li {*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*nav a {*/
+/*    text-decoration: none;*/
+/*    color: #fff;*/
+/*    font-weight: bold;*/
+/*    transition: color 0.3s;*/
+/*}*/
+
+/*nav a:hover {*/
+/*    color: blue;*/
+/*}*/
+
+section#home {
+    text-align: center;
+    background: url(https://kff.kz/images/bg.jpg);
+    color: white;
+}
+
+section#home h1 {
+    color: white;
+}
+
+section {
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#home,
+#news,
+#kpl,
+#matches,
+#newsletter {
+    margin: 20px 0;
+    padding: 2rem;
+}
+
+.list-group {
+    max-width: 1500px;
+}
+
+.list-group-item {
+    margin-bottom: 10px;
+}
+
+.list-group-item:hover {
+    transform: scale(1.05);
+}
+
+.list-group-item::before {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.carousel-inner img {
+    max-width: 100%;
+}
+
+.card {
+    margin-bottom: 1rem;
+}
+
+.table1 {
+    width: 80%;
+    background-color: aliceblue;
+}
+
+.progress {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .table1 th, .table1 td {
+        font-size: 14px;
+    }
+}
+
+/*.table1 {*/
+/*    width: 100%;*/
+/*    border-collapse: collapse;*/
+/*    margin-top: 10px;*/
+/*    border: 1px solid #ddd;*/
+/*    height: 25px;*/
+/*    background-color: aliceblue;*/
+/*}*/
+
+/*.table1 th, td {*/
+/*    padding: 10px;*/
+/*    text-align: left;*/
+/*    border-bottom: 1px solid #ddd;*/
+/*    border-right: 1px solid #ddd;*/
+/*}*/
+
+/*.table3{*/
+/*    background-color: #002359;*/
+/*    color: #fff;*/
+/*}*/
+
+/*.table1 th {*/
+/*    font-weight: bold;*/
+/*}*/
+
+#newsletter {
+    background-color: #002359;
+    margin: 20px;
+    text-align: center;
+    padding: 4px;
+    border: none;
+}
+
+/*ol {*/
+/*    list-style-type: none;*/
+/*}*/
+
+/*#newsletter h2 {*/
+/*    color: white;*/
+/*}*/
+
+/*.newsletter-form {*/
+/*    align-items: center;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+.newsletter-form  {
+    font-size: 16px;
+}
+
+/*.newsletter-form button {*/
+/*    background-color: white;*/
+/*    color: black;*/
+/*    padding: 10px 20px;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    font-size: 16px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+.newsletter-form button:hover {
+    background-color: #001b46;
+}
+
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #002359;
+    color: #fff;
+}
