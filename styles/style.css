@@ -3,9 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
-hr {
-    border-color: midnightblue;
-}
+
 header {
     background-color: #002359;
     color: #fff;
@@ -47,31 +45,15 @@ header .logo img {
 .navbar-blue .dropdown-menu {
     margin: 0;
 }
-/*nav ul {*/
-/*    !*list-style: none;*!*/
-/*    !*display: flex;*!*/
-/*    margin-right: 1000px;*/
-/*}*/
-
-/*nav ul li {*/
-/*    margin-right: 10px;*/
-/*}*/
-
-/*nav a {*/
-/*    text-decoration: none;*/
-/*    color: #fff;*/
-/*    font-weight: bold;*/
-/*    transition: color 0.3s;*/
-/*}*/
-
-/*nav a:hover {*/
-/*    color: blue;*/
-/*}*/
 
 section#home {
     text-align: center;
     background: url(https://kff.kz/images/bg.jpg);
     color: white;
+}
+
+.digit {
+    text-align: center;
 }
 
 section#home h1 {
@@ -98,9 +80,19 @@ a:hover {
 #news,
 #kpl,
 #matches,
-#newsletter {
+#newsletter
+{
     margin: 20px 0;
     padding: 2rem;
+}
+
+#tab1, #tab2 {
+    background-color: white;
+    color: dodgerblue;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .list-group {
@@ -133,40 +125,102 @@ a:hover {
     background-color: aliceblue;
 }
 
-.progress {
-    margin-bottom: 1rem;
+#task-form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-    .table1 th, .table1 td {
-        font-size: 14px;
-    }
+#new-task {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
 }
 
-/*.table1 {*/
-/*    width: 100%;*/
-/*    border-collapse: collapse;*/
-/*    margin-top: 10px;*/
-/*    border: 1px solid #ddd;*/
-/*    height: 25px;*/
-/*    background-color: aliceblue;*/
-/*}*/
+#task-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-/*.table1 th, td {*/
-/*    padding: 10px;*/
-/*    text-align: left;*/
-/*    border-bottom: 1px solid #ddd;*/
-/*    border-right: 1px solid #ddd;*/
-/*}*/
+#task-form button:hover {
+    background-color: #0056b3;
+}
 
-/*.table3{*/
-/*    background-color: #002359;*/
-/*    color: #fff;*/
-/*}*/
+#task-list {
+    padding: 0;
+}
 
-/*.table1 th {*/
-/*    font-weight: bold;*/
-/*}*/
+#task-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#task-list li:hover {
+    transform: scale(1.05);
+}
+
+#task-list li button {
+    margin-left: 15px;
+    cursor: pointer;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+#task-list li button:hover {
+    background-color: #0056b3;
+}
+
+#countdown {
+    text-align: center;
+}
+
+#timer {
+    display: flex;
+    font-size: 25px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.countdown-element {
+    background-color: dodgerblue;
+    color: white;
+    margin: 17px 20px 17px 20px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    min-width: 80px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.accordion-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+}
 
 #newsletter {
     background-color: #002359;
@@ -176,32 +230,9 @@ a:hover {
     border: none;
 }
 
-/*ol {*/
-/*    list-style-type: none;*/
-/*}*/
-
-/*#newsletter h2 {*/
-/*    color: white;*/
-/*}*/
-
-/*.newsletter-form {*/
-/*    align-items: center;*/
-/*    margin-top: 20px;*/
-/*}*/
-
 .newsletter-form  {
     font-size: 16px;
 }
-
-/*.newsletter-form button {*/
-/*    background-color: white;*/
-/*    color: black;*/
-/*    padding: 10px 20px;*/
-/*    border: none;*/
-/*    border-radius: 5px;*/
-/*    font-size: 16px;*/
-/*    cursor: pointer;*/
-/*}*/
 
 .newsletter-form button:hover {
     background-color: #001b46;
@@ -213,3 +244,5 @@ footer {
     background-color: #002359;
     color: #fff;
 }
+
+
