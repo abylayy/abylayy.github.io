@@ -1,6 +1,6 @@
 const countDownDate = new Date("November 17, 2023 21:00:00").getTime();
 
-const x = setInterval(function() {
+const x = setInterval(function () {
     const now = new Date().getTime();
     const distance = countDownDate - now;
 
