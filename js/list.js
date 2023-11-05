@@ -1,3 +1,4 @@
+//Runs when DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
 
     //Select all tasks
@@ -6,8 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
     existingTasks.forEach(function (task) {
         const taskText = task.querySelector("span");
 
-        //Add click
+        //Add click event
         task.addEventListener("click", function (event) {
+            //exclude button
             if (event.target.tagName !== 'BUTTON') {
                 taskText.style.textDecoration = "line-through";
             }
@@ -17,15 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
         const deleteButton = document.createElement("button");
         deleteButton.textContent = "Delete";
         deleteButton.onclick = function () {
-            task.parentNode.removeChild(task);
+            task.parentNode.removeChild(task); //remove when clciked
         };
 
+        //adding button
         task.appendChild(deleteButton);
     });
 });
 
 // Add a new task
 function addTask() {
+    //input for new task
     const taskInput = document.getElementById("new-task");
     const taskText = taskInput.value.trim();
 
@@ -34,9 +38,13 @@ function addTask() {
         alert("You must write something!");
         return;
     } else {
+        //get task list
         const taskList = document.getElementById("task-list");
+
+        //create new list item
         const newTaskItem = document.createElement("li");
 
+        //create span element
         const span = document.createElement("span");
         span.textContent = taskText;
 
@@ -58,6 +66,7 @@ function addTask() {
         newTaskItem.appendChild(deleteButton);
         taskList.appendChild(newTaskItem);
 
+        //input clear
         taskInput.value = "";
 
     }

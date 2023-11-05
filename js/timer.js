@@ -1,3 +1,4 @@
+//Set the target time
 const countDownDate = new Date("November 17, 2023 21:00:00").getTime();
 
 const x = setInterval(function () {
