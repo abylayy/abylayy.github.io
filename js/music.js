@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    var audio = new Audio("Қазақстан - Әнұран (kazmuz.kz).mp3");
+    var audio = new Audio("music/Қазақстан - Әнұран (kazmuz.kz).mp3");
 
     document.addEventListener("click", function () {
         //play and pause
