@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .chart-container {
+            margin-top: 20px;
+        }
+    </style>
+    <link rel="icon"
+          href="https://upload.wikimedia.org/wikipedia/ru/thumb/c/cd/Football_Federation_of_Kazakhstan_Logo.svg/1200px-Football_Federation_of_Kazakhstan_Logo.svg.png">
+    <title>KFF Monitoring System</title>
+</head>
+
+<body>
+<div class="container">
+    <h1>Kazakhstan Football Federation Monitoring System</h1>
+    <p>Stay informed with the latest website statistics and performance metrics.</p>
+
+    <div class="chart-container">
+        <canvas id="lineChart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="barChart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="pieChart"></canvas>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var lineChartData = {
+            labels: ["May", "June", "July", "August", "September"],
+            datasets: [{
+                label: "Website Traffic",
+                borderColor: "rgba(75, 192, 192, 1)",
+                data: [25, 29, 50, 41, 90],
+                fill: false
+            }]
+        };
+
+        var barChartData = {
+            labels: ["Chrome", "Firefox", "Safari", "Edge", "Other"],
+            datasets: [{
+                label: "Browser Usage",
+                backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56", "#4CAF50", "#9C27B0"],
+                data: [50, 8, 27, 10, 5]
+            }]
+        };
+
+        var pieChartData = {
+            labels: ["Men", "Women"],
+            datasets: [{
+                data: [95, 5],
+                backgroundColor: ["blue", "pink"],
+            }]
+        };
+
+
+        var lineChartCtx = document.getElementById("lineChart").getContext("2d");
+        new Chart(lineChartCtx, {
+            type: "line",
+            data: lineChartData
+        });
+
+        var barChartCtx = document.getElementById("barChart").getContext("2d");
+        new Chart(barChartCtx, {
+            type: "bar",
+            data: barChartData
+        });
+
+        var pieChartCtx = document.getElementById("pieChart").getContext("2d");
+        new Chart(pieChartCtx, {
+            type: "pie",
+            data: pieChartData
+        });
+    });
+</script>
+</body>
+
+</html>
